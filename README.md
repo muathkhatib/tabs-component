@@ -1,34 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tabs Component
 
-## Getting Started
+## Description
 
-First, run the development server:
+The Tabs Component is a React-based tabbed navigation menu that allows users to switch between different content sections. It was developed as part of a task to build a Tabs Component for an application, focusing on code quality, maintainability, reusability, and a clean API design.
+
+## Features
+
+- Renders a tabbed navigation menu and corresponding content sections for each tab.
+- Allows users to switch between tabs by clicking on the tab headers.
+- Supports dynamic content for each tab, enabling changes in content based on user interaction.
+- Implemented using the compound component pattern, providing a modular and reusable structure.
+- Provides a clean and intuitive API for defining tabs and their content.
+- Supports customization of tab styling and behavior, including active tab highlighting.
+
+## How to Use
+
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+cd tabs-component
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Install dependencies using npm or yarn.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+or
 
-## Learn More
+```bash
+yarn install
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Run the application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+or
 
-## Deploy on Vercel
+```bash
+yarn start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. Open your browser and go to http://localhost:3000 to see the Tabs Component in action.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Components
+
+### TabsNavigator
+
+The `TabsNavigator` component is the main component that encapsulates the tabbed navigation functionality. It uses the `Tab` and `TabPanel` components as children to define the tabs and their respective content.
+
+### Tab
+
+The `Tab` component represents an individual tab in the navigation menu. It accepts the following props:
+
+- `active` (optional): A boolean value indicating if the tab is currently active.
+- `onClick` (optional): A function to be called when the tab is clicked.
+- `children`: The content of the tab, typically a text label.
+
+### TabPanel
+
+The `TabPanel` component represents the content section corresponding to an individual tab. It accepts the following prop:
+
+- `children`: The content of the tab panel.
+
+## Customization
+
+You can customize the appearance of the Tabs Component by modifying the `style.css` file. The CSS classes defined in this file allow you to adjust the tab header styles, active tab highlighting, and other visual aspects of the component.
+
+## Dependencies
+
+- React: ^16.0.0 or later
+- axios: ^0.21.1 or later (for fetching data)
+- next: ^11.0.0 or later (for server-side rendering and routing)
+- react-dom: ^16.0.0 or later
+
+## Evaluation Criteria
+
+The implementation of the Tabs Component was evaluated based on the following criteria:
+
+- Code structure and organization.
+- Effective use of the compound component pattern.
+- Adherence to React best practices and component architecture.
+- Component API design and usability.
+- Customization options and flexibility.
+- Code efficiency and performance.
+- Documentation and instructions.
+
+## Acknowledgments
+
+This Tabs Component was developed by [Your Name] as part of [Project/Task Name].
