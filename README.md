@@ -90,7 +90,3 @@ The implementation of the Tabs Component was evaluated based on the following cr
 - Customization options and flexibility.
 - Code efficiency and performance.
 - Documentation and instructions.
-
-## Acknowledgments
-
-This Tabs Component was developed by [Your Name] as part of [Project/Task Name].
